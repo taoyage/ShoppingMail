@@ -3,14 +3,14 @@
 <div id="headerBar" class="headerBar">
   <div id="headerBar-bg"></div>
   <div class="headerBar-logo">
-    <i></i>
+    <i>yage.net</i>
   </div>
-  <a class="headerBar-search"  ng-href="#">
+  <div class="headerBar-search"  ng-href="#">
     <span></span>
     <div>
-      <input  maxlength="20" autocomplete="true" value="美妆1元起 独家放价"/>
+      <input  maxlength="20" autocomplete="true" value="贝尔是最帅的猫"/>
     </div>
-  </a>
+  </div>
   <a class="headerBar-login" ng-href="#">
     <span>
       登录
@@ -18,7 +18,67 @@
   </a>
 </div>
 
-<ion-content>
+<ion-content id="home-content" class="scroll-content" scroll="false">
+<!--头部滚动条-->
+<div class="headerSlider">
+  <div id="headerSlider" class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" ng-repeat="item in headerSlideData">
+        <img alt="{{item.alt}}" ng-src="{{item.src}}">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+
+<!-- 功能导航 -->
+<nav id="nav">
+  <span ui-sref="tab.category">
+    <img ng-src="img/home/nav0.png" alt="">
+    <p>分类查询</p>
+  </span>
+  <span>
+    <img ng-src="img/home/nav1.png" alt="">
+    <p>物流查询</p>
+  </span>
+  <span>
+    <img ng-src="img/home//nav2.png" alt="">
+    <p>购物车</p>
+  </span>
+  <span>
+    <img ng-src="img/home/nav3.png" alt="">
+    <p>我的京东</p>
+  </span>
+  <span>
+    <img ng-src="img/home/nav4.png" alt="">
+    <p>充值</p>
+  </span>
+  <span>
+    <img ng-src="img/home/nav5.png" alt="">
+    <p>领券中心</p>
+  </span>
+  <span>
+    <img ng-src="img/home/nav6.png" alt="">
+    <p>生活团购</p>
+  </span>
+  <span>
+    <img src="img/home/nav7.png" alt="">
+    <p>我的关注</p>
+  </span>
+</nav>
+
+<!--头条-->
+<div class="headline">
+  <!-- <img ng-src="img/home/home-toutiao.jpg"> -->
+  <h4>toutiao</h4>
+  <div id="headlineSlider" class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"></div>
+      <div class="swiper-slide"></div>
+      <div class="swiper-slide"></div>
+    </div>
+  </div>
+</div>
 
 </ion-content>
 </ion-view>

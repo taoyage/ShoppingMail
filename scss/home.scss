@@ -1,0 +1,178 @@
+/*
+* @Author: taoyage
+* @Date:   2016-10-17 20:14:16
+* @Last Modified by:   taoyage
+* @Last Modified time: 2016-10-19 00:24:58
+* @HomePage css style
+*/
+
+
+
+#home{
+
+  background:#f7f4f4;
+
+  /* 头部搜索栏 */
+  .headerBar{
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    display: inline-block;
+    width: 100%;
+    height: 35px;
+
+    #headerBar-bg{
+      background-color: #c91523;
+      opacity: 0;
+      height: 35px;
+      position: absolute;
+      width: 100%;
+    }
+
+    .headerBar-logo {
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      width: 56px;
+      height: 35px;
+      display: inline-block;
+
+      i {
+        display: inline-block;
+        height:21px;
+        width: 56px;
+        margin-left: 7px;
+        margin-top: 7px;
+        color:white;
+      }
+    }
+
+    .headerBar-search {
+      position:absolute;
+      left: 70px;
+      right: 55px;
+      width: auto;
+      height: 25px;
+      margin-top: 5px;
+      color: #ffffff;
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 2px;
+
+      span{
+        display: inline-block;
+        height:20px;
+        width: 20px;
+        background: url("../../img/common/sprites.png") no-repeat;
+        background-position: -60px -109px;
+        background-size: 200px 200px;
+        margin-left: 5px;
+        margin-top: 3px;
+      }
+
+      div{
+        display:inline-block;
+        height:100%;
+        width: auto;
+
+        input{
+          border: 0;
+          display: inline-block;
+          background: transparent;
+          font-size: 13px;
+          height: 1.4em;
+          width: 100%;
+          vertical-align: middle;
+          margin-top: -15px;
+          color: #fff;
+        }
+      }
+    }
+
+    .headerBar-login {
+      width: 30px;
+      height:inherit;
+      position: absolute;
+      right: 7px;
+      display: inline-block;
+
+      span{
+        margin-top: 7px;
+        color:#ffffff;
+        font-size: 15px;
+        display: inline-block;
+      }
+    }
+  }
+
+  /*头滚动条*/
+  .headerSlider {
+    .swiper-container {
+      height: 182px;
+      width: 100%;
+    }
+    .swiper-container img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  /* 功能导航 */
+  #nav{
+    height:160px;
+    width:100%;
+    padding:0 3%;
+    background-color:#ffffff;
+    overflow:hidden;
+
+    span{
+      display:block;
+      float:left;
+      width:25%;
+      height:60px;
+      margin-top:16px;
+
+      img{
+        display:block;
+        width:40px;
+        height:40px;
+        margin:0px auto;
+      }
+      p{
+        text-align:center;
+        margin-top: 5px;
+      }
+    }
+  }
+
+  /* 头条 */
+  .headline{
+    padding-top: 10px;
+    display: inline-block;
+    height: 42px;
+    width: 100%;
+    background-color: #fff;
+    border-top:1px solid #f7f4f4;
+
+    h4{
+      margin:0;
+      width: 25%;;
+      margin-left: 5px;
+      text-align: center;
+      display: inline-block;
+      border-right:1px solid #f7f4f4;
+      vertical-align: top;
+    }
+
+    #headlineSlider{
+     display: inline-block;
+     height: 25px;
+     width: 70%;
+     border:1px solid red;
+   }
+
+ }
+
+
+}
